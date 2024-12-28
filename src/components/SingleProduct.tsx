@@ -6,9 +6,9 @@ const SingleProduct = ({ product, setCart, cart }: any) => {
   const findCartProduct = cart.find((item: any) => item.id === product.id);
   return (
     <>
-      <div className="bg-white rounded-lg shadow-sm relative group">
+      <div className="bg-white rounded-lg shadow-sm relative group  hover:shadow-lg">
         {/* Image Container */}
-        <div className="relative bg-[#ebe6e6]">
+        <div className="relative bg-[#ebe6e6] rounded-md ">
           <div className="aspect-[3/4]">
             <img
               src={product.thumbnail}
